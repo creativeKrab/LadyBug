@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Explora&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Explora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,
+  100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Explora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/uploadstyles.css">
+</head>
+
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+<div class="outer">
+<p class="intro">Upload Image</p>
+<div>
+<div class="upper">
+  <image src="css\images\image.svg" alt="" class="icon"></image>
+  <p class="images">Image
+    <div class="imagetype">PNG, JPG</div>
+  </div>
+  </p>
+  
+  <div class="inner" id="drop-area">
+    <img src="css\images\drag.svg" alt="">
+    <p class="ddu">Drag & Drop to Upload</p>
+    <button id="browse">or browse file</button>
+    <input type= "file" id="fileElem" hidden multiple accept="image/*" onchange="handleFiles(this.files)">
+  </div>
+
+  <button id = "upload">Upload</button>
+  <div id="gallery"></div>
+</div>
+</div>
+
+<p class="nextparapara">Your Privacy is Our Priority</p>
+<p class="nextparabod">We take your privacy seriously. 
+  All your data, including answers to the symptom questionnaire and uploaded images, 
+  is handled with the utmost confidentiality and in compliance with health data regulations.</p>
+
+<footer>
+    <p>@LadyBug, All rights reserved</p>
+</footer>
+
+<script src="js/upload.js"></script>
+  
+</body>
+</html>

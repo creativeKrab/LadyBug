@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 110vh;
+  background-image: url('loginbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  font-family: Montserrat;
+  text-decoration: none;
+  padding: 30px;
+  color: #e7c9df;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #174b83;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 15px;
+  border-color: gray;
+  background-color: rgb(229, 197, 232, 0.3);
+  place-items: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  padding: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 100px;
+  z-index: 0;
+  position: relative;
+  height: 520px;
+}
+
+.bug {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 1140px;
+  margin-top: -642px;
+  padding: 0%;
+  position: absolute;
+  display: flex;
+  transform: rotate(10deg);
+}
+
+.hello {
+  font-family: Montserrat;
+  font-size: 30px;
+  margin-top: 10px;
+  z-index: 1;
+  color: rgb(210, 74, 74);
+  opacity: 100%;
+}
+
+.log {
+  font-family: Roboto;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: Roboto;
+  font-size: 18px;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 600px; 
+  height: 30px;
+  padding: 6px; 
+  margin-top: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  margin-bottom: 10px;
+  opacity: 75%;
+}
+
+button { 
+  width: 150px; 
+  height: 40px;
+  text-align: center;
+  place-items: center;
+  font-family: Roboto;
+  font-size: 18px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 10px; 
+  margin-top: 15px; 
+  margin-bottom: 10px;
+  background-color: #b34ec3; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+} 
+
+button:hover { background-color: #b30071; }
+
+p {
+  font-family: Roboto;
+  font-size: 15px;
+  margin-top:12px;
+  margin-bottom: 10px;
+}
+
+.opt {
+  display: flex;
+  flex-direction: row;
+}
+
+.pass1{
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  color: #104072;
+  margin-right: 120px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.pass1:hover{
+  color: #b30071;
+  text-decoration: underline;
+}
+
+.google {
+  margin-top: 7px;
+  width: 200px;
+  height :50px;
+  margin-left: 13px;
+  margin-right: 13px;
+  background-color: white;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goo {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.google:hover {
+  background-color: rgb(232, 181, 211);
+}
+
+span {
+  color: black;
+  font-family: Roboto;
+  margin-left: 2px;
+  font-size: 15px;
+}
+
+footer {
+ font-family: Montserrat;
+ display: flex;
+ flex:1;
+ font-size: 18px;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ margin-top: 160px;
+ width: 100%;
+ height: 100px;
+ background-color: black;
+}

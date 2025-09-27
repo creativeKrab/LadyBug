@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take the Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Explora&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Explora&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/teststyles.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+  <div class="container">
+    <div id="question-container">
+      <p id="heading">Hello Human!</p> 
+      <p id="question"> Ready to begin the Test? Just answer with simple Yes/No and we will fetch your personalized predictions at the end!</p> 
+      <button id="start-button" onclick="startTest()">Let's Go!</button> 
+      <div id="answer-buttons" style="display: none;"> 
+      <div class="buttondiv">
+        <button  class="innerbutton" onclick="answerQuestion('yes')">YES</button> 
+        <button class="innerbutton" onclick="answerQuestion('no')">NO</button>
+      </div> 
+    </div>
+  </div>
+  <div id="thank-you-container" style="display: none;"> 
+    <img id="result-icon" alt="">
+    <p id="thank-you-message"></p> 
+  </div>
+</div>
+
+    <p class="note">Important Note</p>
+    <p class="notebody">Our platform is designed to offer informational support and early insights. 
+      It is not a substitute for professional medical advice or diagnosis. 
+      If your results raise concerns, we strongly recommend consulting a licensed healthcare provider for 
+      further evaluation and testing.</p>
+  
+
+  <footer>
+    <p>@LadyBug, All rights reserved</p>
+  </footer>
+
+  <script src="js/testscript.js"></script>
+</body>
+</html>
